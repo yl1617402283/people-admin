@@ -125,7 +125,12 @@
 			<groupId>com.aliyun.openservices</groupId>
 			<artifactId>ons-client</artifactId>
 		</dependency>
-		<!--END: Third Jars-->
+        <dependency>
+            <groupId>com.qmcy</groupId>
+            <artifactId>qmcy-pojo</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--END: Third Jars-->
 	</dependencies>
 
 	<build>
