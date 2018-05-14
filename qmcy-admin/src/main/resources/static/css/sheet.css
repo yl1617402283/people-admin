@@ -1,0 +1,74 @@
+/*
+* @description: style for gride
+* @author: Diana-Hao
+* @update: V.0.0.1 (2017-9-30 17:00)
+*/
+.gride-top{
+    width: 100%;
+    padding-top: 5px;
+    background: #fff;
+    box-sizing: border-box;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.gride-top ul{
+    display: flex;
+    width: 100%;
+    margin: 15px 0;
+    justify-content: space-between;
+}
+.gride-top ul li{
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.gride-top ul li span{
+    display: flex;
+    justify-content: space-between;
+    word-break: keep-all;
+}
+.select-time{
+    display: flex;
+    justify-content: space-between;
+    line-height: 36px;
+}
+.select-timeeptw{
+    padding: 0 10px;
+}
+.button-box{
+    padding: 30px 20px 10px 20px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+.button-boxline{
+    /*padding:35px;*/
+    padding: 20px 35px 0px 0px;
+    border-top:1px solid #e8e8e8;
+}
+.gride{
+    display:table;
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    color: #909090;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+/*.row {*/
+    /*display:table-row;*/
+    /*border: 1px solid #ededed;*/
+/*}*/
+/*.row:nth-child(even){*/
+    /*background: #fff;*/
+/*}*/
+.gride ul li{
+    display:table-cell;
+    line-height: 50px;
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+}

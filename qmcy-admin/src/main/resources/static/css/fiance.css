@@ -1,0 +1,91 @@
+/*
+* @description: style for gride
+* @author: Diana-Hao
+* @update: V.0.0.1 (2017-9-30 17:00)
+*/
+
+
+.gride-top ul li span{
+    display: flex;
+    justify-content: space-between;
+    word-break: keep-all;
+}
+.select-time{
+    display: flex;
+    justify-content: space-between;
+    line-height: 36px;
+}
+.select-timeeptw{
+    padding: 0 10px;
+}
+.button-box{
+    padding: 30px 20px 10px 20px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+
+.ht-userphoto,.ht-userphoto img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0;
+    outline: none;
+}
+.ht-userInfor{
+    line-height: 50px;
+    padding: 0 20px;
+}
+.ht-userInfor i{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+}
+.ht-userlavel{
+    float: left;
+    padding-top: 25px;
+    line-height: 25px;
+    padding: 25px 20px 0 20px;
+}
+.ht-charge em{
+    padding: 0 20px;
+}
+.ht-labelw{
+    width: 80px;
+    vertical-align: middle;
+}
+.ht-labeltextarea{
+    padding-bottom: 90px;
+}
+.ht-newinput input{
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+    padding: 2px 10px;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    border-radius: 5px;
+    color: #333;
+}
+.ht-newinput input[type=radio]{
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+.ht-newinput .btn{
+    line-height: 20px;
+    padding: 3px 10px;
+    background: #2e6da4;
+    border-radius: 5px;
+    border: 0;
+    vertical-align: middle;
+    color: #fff;
+    margin: 0 10px;
+}
+.ht-newinput .btn:hover{
+    color: #fff;
+
+}
+A:link {
+    TEXT-DECORATION: underline
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>账号详情</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/sheet.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<!--右侧内容区域-->
+<div class="main">
+    <div class="userDetail">
+        <div class="userDetailtitle">基本信息</div>
+        <ul>
+            <li>
+                <label class="labelHt">状态:</label>
+                <em th:text="${map.status} == '2'? '禁用': '启用'"></em>
+            </li>
+            <li>
+                <label class="labelHt">系统编号:</label>
+                <em th:text="${map.userId}"></em>
+            </li>
+            <li>
+                <label class="labelHt">昵称:</label>
+                <em th:text="${map.nickname}"></em>
+            </li>
+            <li>
+                <label class="labelHt">姓名:</label>
+                <em th:text="${map.trueName}"></em>
+            </li>
+            <li>
+                <label class="labelHt">身份证号:</label>
+                <em th:text="${map.cardId}"></em>
+            </li>
+            <li>
+                <label class="labelHt">禁用理由:</label>
+                <em th:text="${map.frozen}"></em>
+            </li>
+            <li>
+                <label class="labelHt">禁用时长:</label>
+                <em th:text="${map.frozenTime}"></em>
+            </li>
+            <li>
+                <label class="labelHt">店主星级:</label>
+                <em th:text="${map.rank}==1?'一星会员':''"></em>
+                <em th:text="${map.rank}==2?'二星会员':''"></em>
+                <em th:text="${map.rank}==3?'三星会员':''"></em>
+                <em th:text="${map.rank}==4?'四星会员':''"></em>
+                <em th:text="${map.rank}==5?'五星会员':''"></em>
+            </li>
+            <li>
+                <label class="labelHt">注册时间:</label>
+                <em th:text="${map.wTime}"></em>
+            </li>
+            <li>
+                <label class="labelHt">辅导员:</label>
+                <em th:text="${map.tjrusername}"></em>
+            </li>
+            <li>
+                <label class="labelHt">服务中心:</label>
+                <em th:text="${map.operation}"></em>
+            </li>
+            <li>
+                <label class="labelHt">手机号码:</label>
+                <em th:text="${map.mobile}"></em>
+            </li>
+            <li>
+                <label class="labelHt">所在地区:</label>
+                <em th:text="${map.address}"></em>
+            </li>
+            <li>
+                <label class="labelHt">实名认证:</label>
+                <em th:text="${map.rzStatus} == 0 ? '未认证': '已认证'"></em>
+            </li>
+            <li>
+                <label class="labelHt">认证时间:</label>
+                <em th:text="${map.cTime}"></em>
+            </li>
+        </ul>
+    </div>
+    <br/>
+    <div class="userDetail">
+        <div class="userDetailtitle">店铺信息</div>
+        <ul>
+            <li>
+                <label class="labelHt">店铺名称:</label>
+                <em th:text="${map.shopName}"></em>
+            </li>
+            <li>
+                <label class="labelHt">开店时间:</label>
+                <em th:text="${map.addtime}"></em>
+            </li>
+            <li>
+                <label class="labelHt">店铺类型:</label>
+                <em th:text="${map.sType} == '1' ? '企业': '个人'"></em>
+            </li>
+            <li>
+                <label class="labelHt">实体店铺:</label>
+                <em th:text="${map.type} == '1' ? ${map.dpProvince}+${map.dpCity}:'无'"></em>
+            </li>
+            <li>
+                <label class="labelHt">实名姓名:</label>
+                <em th:text="${map.shopTrueName}"></em>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.qmcy</groupId>
+	<artifactId>people-admin</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.7.RELEASE</version>
+	</parent>
+
+	<modules>
+		<module>qmcy-admin</module>
+		<module>qmcy-dao</module>
+		<module>qmcy-pojo</module>
+	</modules>
+
+	<properties>
+		<spring-cloud.version>Dalston.SR3</spring-cloud.version>
+		<spring-boot.version>1.5.7.RELEASE</spring-boot.version>
+		<spring-mybatis.version>1.3.1</spring-mybatis.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<yhyy.version>0.0.1-SNAPSHOT</yhyy.version>
+		<yhyy.admin.version>0.0.2-SNAPSHOT</yhyy.admin.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<tomcat.version>8.5.28</tomcat.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!--Third Jars-->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>5.1.21</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.pagehelper</groupId>
+				<artifactId>pagehelper</artifactId>
+				<version>4.1.6</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>2.8.10</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-beanutils</groupId>
+				<artifactId>commons-beanutils</artifactId>
+				<version>1.9.2</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>1.7</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-lang</groupId>
+				<artifactId>commons-lang</artifactId>
+				<version>2.5</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>3.4</version>
+			</dependency>
+			<dependency>
+				<groupId>com.belerweb</groupId>
+				<artifactId>pinyin4j</artifactId>
+				<version>2.5.0</version>
+			</dependency>
+			<dependency>
+				<groupId>dom4j</groupId>
+				<artifactId>dom4j</artifactId>
+				<version>1.6.1</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>2.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>21.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>1.2.4</version>
+			</dependency>
+			<dependency>
+				<groupId>net.sourceforge.nekohtml</groupId>
+				<artifactId>nekohtml</artifactId>
+				<version>1.9.22</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>2.8.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-ooxml</artifactId>
+				<version>3.16</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-fileupload</groupId>
+				<artifactId>commons-fileupload</artifactId>
+				<version>1.3.3</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid-spring-boot-starter</artifactId>
+				<version>1.1.5</version>
+			</dependency>
+			<!--END: Third Jars-->
+
+			<!--Company Jars-->
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-front-admin</artifactId>
+				<version>${yhyy.admin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-admin-dao</artifactId>
+				<version>${yhyy.admin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-admin-pojo</artifactId>
+				<version>${yhyy.admin.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-db</artifactId>
+				<version>${yhyy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-common</artifactId>
+				<version>${yhyy.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-bs-odr-po</artifactId>
+				<version>${yhyy.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-redis</artifactId>
+				<version>${yhyy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-bs-adm-po</artifactId>
+				<version>${yhyy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-bs-acc-po</artifactId>
+				<version>${yhyy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-bs-cod-po</artifactId>
+				<version>${yhyy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-mall-mda-po</artifactId>
+				<version>${yhyy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-bs-prm-po</artifactId>
+				<version>${yhyy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-bs-rpo-po</artifactId>
+				<version>${yhyy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-bs-sca-po</artifactId>
+				<version>${yhyy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yhyy</groupId>
+				<artifactId>yhyy-bs-usr-po</artifactId>
+				<version>${yhyy.version}</version>
+			</dependency>
+			<!--END: Company Jars-->
+
+			<!--Aliyun Jars-->
+			<dependency>
+				<groupId>com.aliyun.openservices</groupId>
+				<artifactId>ons-client</artifactId>
+				<version>1.7.0.Final</version>
+			</dependency>
+			<!--END: Aliyun Jars-->
+
+			<!--Spring Boot-->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-actuator</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-test</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-jdbc</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-data-redis</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-thymeleaf</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter</artifactId>
+				<version>${spring-mybatis.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter-test</artifactId>
+				<version>${spring-mybatis.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-devtools</artifactId>
+				<version>${spring-boot.version}</version>
+				<optional>true</optional>
+			</dependency>
+			<!--END: Spring Boot-->
+
+			<!--Spring Cloud-->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<!--END: Spring Cloud-->
+		</dependencies>
+	</dependencyManagement>
+</project>

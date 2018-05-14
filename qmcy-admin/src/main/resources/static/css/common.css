@@ -1,0 +1,512 @@
+/*!* 控制margin-right*!*/
+/*.rightTwo{*/
+    /*margin-right:20px;*/
+/*}*/
+/*.bottomTwo{*/
+    /*margin-bottom: 20px;*/
+/*}*/
+/*!* 控制选择框与选项之间的距离*!*/
+/*.checkSpace{*/
+    /*margin-right:10px;*/
+/*}*/
+/*!* 控制信息详情的标题，字体居右*!*/
+/*.textRight{*/
+    /*text-align: right;*/
+    /*width: 90px;*/
+/*}*/
+/*!* 面包屑*!*/
+/*.nav{*/
+    /*width: 100%;*/
+    /*height: 30px;*/
+    /*background: #f0f0f0;*/
+    /*color: #999;*/
+    /*font-size: 12px;*/
+    /*line-height: 30px;*/
+    /*padding-left:30px;*/
+/*}*/
+/*.nav a{*/
+    /*color: #999;*/
+    /*font-size: 12px;*/
+/*}*/
+/*.nav a:hover{*/
+    /*color: #ffa00f;*/
+/*}*/
+/*!* 查询部分*!*/
+/*.divClass{*/
+    /*overflow: hidden;*/
+/*}*/
+/*.gride-top .divClass ul li{*/
+    /*float: left;*/
+    /*width: auto;*/
+    /*padding: 0 30px 10px 0;*/
+/*}*/
+/*.divClass ul li.searchBtn{*/
+    /*padding-right: 0;*/
+/*}*/
+/*!* 查询的input，，，长度为150*!*/
+/*.divClass .shortInput{*/
+    /*width:170px;*/
+    /*border: 1px solid #ccc;*/
+/*}*/
+/*!* 查询的input，，，长度为200*!*/
+/*.divClass .longInput{*/
+    /*width: 200px;*/
+    /*border: 1px solid #ccc;*/
+/*}*/
+/*.gride-top .divClass ul{*/
+    /*float: left;*/
+    /*width: auto;*/
+    /*display: block;*/
+    /*margin-top: 0;*/
+/*}*/
+/*.labelClass{*/
+    /*display: inline-block;*/
+/*}*/
+/*!* 查询里的select*!*/
+/*.divClass .selectClass{*/
+    /*-webkit-box-shadow:none;*/
+    /*box-shadow:none;*/
+    /*height: 36px;*/
+    /*line-height: 36px;*/
+    /*box-sizing: border-box;*/
+    /*-webkit-appearance: none;*/
+    /*padding: 0px 24px 0px 8px;*/
+    /*border-image: initial;*/
+    /*border-radius: 5px;*/
+    /*outline: none;*/
+    /*background: url(../img/a.png) right center no-repeat scroll transparent;*/
+    /*background-position-x: 96%;*/
+/*}*/
+/*!* 信息详情的input输入框*!*/
+/*.infoInput{*/
+    /*width:300px;*/
+/*}*/
+/*.gride-top ul li span{*/
+    /*display: inline-block;*/
+/*}*/
+/*!* 弹出框里的日期，时间，节假日的排列*!*/
+/*.dateUl{*/
+    /*font-size: 16px;*/
+    /*cursor: pointer;*/
+    /*padding: 20px 20px;*/
+/*}*/
+/*.dateLi{*/
+    /*float: left;*/
+    /*padding:20px;*/
+/*}*/
+/*.dateLi:hover{*/
+    /*color: #ffa00f;*/
+    /*text-decoration: underline;*/
+/*}*/
+/*!* 提价按钮*!*/
+/*.subBtn{*/
+    /*background: #00b0e6;*/
+    /*height: 40px;*/
+    /*width: 200px;*/
+    /*border-radius: 5px;*/
+    /*color: #fff;*/
+    /*font-size: 14px;*/
+    /*border: none;*/
+/*}*/
+/*!* 日期*!*/
+/*.dateDiv{*/
+    /*margin: 0 30px;*/
+    /*height:550px;*/
+    /*overflow-y: scroll;*/
+/*}*/
+/*.dateDiv dl dd{*/
+    /*float: left;*/
+    /*margin-right: 20px;*/
+/*}*/
+/*.dateDiv dl dt{*/
+    /*margin-bottom: 10px;*/
+/*}*/
+/*.dateDiv dl{*/
+    /*width: 100%;*/
+    /*overflow: hidden;*/
+/*}*/
+/*.dateDiv dl dd input{*/
+    /*margin-right: 10px;*/
+/*}*/
+/*.dateUlDiv{*/
+    /*margin: 0 30px;*/
+    /*height:550px;*/
+    /*overflow-y: scroll;*/
+/*}*/
+/*.dateUlDiv ul li{*/
+    /*margin-bottom:20px;*/
+/*}*/
+/*.dateUlDiv ul li input{*/
+    /*margin-right:10px;*/
+/*}*/
+
+/*!* 登录页面*!*/
+/*.loginDiv{*/
+    /*position: relative;*/
+    /*top: 50%;*/
+    /*height: 240px;*/
+    /*margin-top: -120px;*/
+/*}*/
+/*!*登录页面输入框*!*/
+/*.loginInput{*/
+    /*!*border-left: 0;*!*/
+    /*!*padding-left: 0;*!*/
+/*}*/
+/*!*登录页面输入框的标题*!*/
+/*.loginSpan{*/
+    /*background: #fff;*/
+    /*border-radius: 0;*/
+/*}*/
+/*.loginDiv .loginGroup{*/
+    /*margin: 10px 10px 20px 10px;*/
+    /*!*width:100%;*!*/
+/*}*/
+/*.loginDiv .loginLeft{*/
+    /*float: left;*/
+    /*height: 32px;*/
+    /*line-height: 32px;*/
+    /*margin: 0px 10px 20px 10px;*/
+/*}*/
+/*.loginDiv .loginRight{*/
+    /*float: right;*/
+    /*margin: 0px 10px 20px 10px;*/
+/*}*/
+/*!* 登录按钮*!*/
+/*.loginBtn{*/
+    /*border: 0;*/
+    /*border-radius: 0;*/
+    /*background: url("../../img/login_btn.png");*/
+    /*width: 150px;*/
+    /*height: 32px;*/
+    /*padding: 0;*/
+    /*line-height: 32px;*/
+/*}*/
+/*!* 登录的背景图*!*/
+/*.loginBack{*/
+    /*height: 100%;*/
+    /*background: url("../../img/login_back.png");*/
+    /*background-size: 100% 100%;*/
+/*}*/
+/*.login_title{*/
+    /*!*background: url(../../img/login_title.png);*!*/
+    /*height: 50px;*/
+    /*background: -webkit-linear-gradient(left,#f19622, #d86028); !* Safari 5.1 - 6.0 *!*/
+    /*background: -o-linear-gradient(left,#f19622, #d86028); !* Opera 11.1 - 12.0 *!*/
+    /*background: -moz-linear-gradient(left,#f19622, #d86028); !* Firefox 3.6 - 15 *!*/
+    /*background: linear-gradient(left,#f19622, #d86028); !* 标准的语法 *!*/
+    /*width: 100%;*/
+    /*background-size: 100% 100%;*/
+/*}*/
+/*.log{*/
+    /*width: 40%;*/
+    /*float: left;*/
+    /*background:  url(../../img/log.png);*/
+    /*margin: 2px 5px;*/
+    /*background-size: cover;*/
+    /*height: 46px;*/
+/*}*/
+/*.yuehua{*/
+    /*width:50%;*/
+    /*float: right;*/
+    /*height: 50px;*/
+    /*line-height:50px;*/
+    /*font-size:16px;*/
+    /*text-align: right;*/
+    /*color: #fff;*/
+    /*padding-right: 10px;*/
+/*}*/
+/*.loginInput:focus{*/
+    /*!*border-color: red;*!*/
+/*}*/
+/*.welcomeBlock{*/
+    /*background: url('../../img/welcome.png');*/
+    /*background-size: 100% 100%;*/
+    /*height: 510px;*/
+    /*width: 700px;*/
+    /*margin: 0 auto;*/
+    /*margin-top: 50px;*/
+/*}*/
+
+/*!* 证件照*!*/
+/*.identifyBlock{*/
+    /*height: 30px;*/
+    /*width: 300px;*/
+    /*text-align: center;*/
+/*}*/
+/*.divClass ul li input{*/
+    /*display: inline-block;*/
+/*}*/
+/*.divClass ul li select{*/
+    /*display: inline-block;*/
+/*}*/
+/*.divClass ul li label{*/
+    /*display: inline-block;*/
+/*}*/
+/*textarea{*/
+    /*resize: none;*/
+/*}*/
+/* 控制margin-right*/
+.rightTwo{
+    margin-right:20px;
+}
+.bottomTwo{
+    margin-bottom: 20px;
+}
+/* 控制选择框与选项之间的距离*/
+.checkSpace{
+    margin-right:10px;
+}
+/* 控制信息详情的标题，字体居右*/
+.textRight{
+    text-align: right;
+    width: 90px;
+}
+.divClass ul li input {
+    display: inline-block;
+}
+/* 面包屑*/
+.nav{
+    width: 100%;
+    height: 30px;
+    background: #f0f0f0;
+    color: #999;
+    font-size: 12px;
+    line-height: 30px;
+    padding-left:30px;
+}
+.nav a{
+    color: #999;
+    font-size: 12px;
+}
+.nav a:hover{
+    color: #ffa00f;
+}
+/* 查询部分*/
+.divClass{
+    overflow: hidden;
+}
+.divClass ul li{
+    float: left;
+    width: auto;
+    padding: 0 30px 10px 0;
+}
+.divClass ul li.searchBtn{
+    padding-right: 0;
+}
+/* 查询的input，，，长度为150*/
+.shortInput{
+    width:150px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+/* 查询的input，，，长度为200*/
+.longInput{
+    width: 200px;
+    border: 1px solid #ccc;
+}
+.labelClass{
+    display: inline-block;
+}
+/* 查询里的select*/
+.selectClass{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    height: 36px;
+    line-height: 36px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    padding: 0px 24px 0px 8px;
+    border-image: initial;
+    border-radius: 5px;
+    outline: none;
+    background: url(../img/a.png) right center no-repeat scroll transparent;
+}
+/* 信息详情的input输入框*/
+.infoInput{
+    width:300px;
+}
+.gride-top ul li span{
+    display: inline-block;
+}
+/* 弹出框里的日期，时间，节假日的排列*/
+.dateUl{
+    font-size: 16px;
+    cursor: pointer;
+    padding: 20px 20px;
+}
+.dateLi{
+    float: left;
+    padding:20px;
+}
+.dateLi:hover{
+    color: #ffa00f;
+    text-decoration: underline;
+}
+/* 提价按钮*/
+.subBtn{
+    background: #00b0e6;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+}
+/* 日期*/
+.dateDiv{
+    margin: 0 30px;
+    height:550px;
+    overflow-y: scroll;
+}
+.dateDiv dl dd{
+    float: left;
+    margin-right: 20px;
+}
+.dateDiv dl dt{
+    margin-bottom: 10px;
+}
+.dateDiv dl{
+    width: 100%;
+    overflow: hidden;
+}
+.dateDiv dl dd input{
+    margin-right: 10px;
+}
+.dateUlDiv{
+    margin: 0 30px;
+    height:550px;
+    overflow-y: scroll;
+}
+.dateUlDiv ul li{
+    margin-bottom:20px;
+}
+.dateUlDiv ul li input{
+    margin-right:10px;
+}
+
+/* 登录页面*/
+.loginDiv{
+    position: relative;
+    top: 50%;
+    height: 240px;
+    margin: 0 auto;
+    width: 480px;
+    background: #fff;
+    height: 330px;
+    margin-top: -165px;
+}
+/*登录页面输入框*/
+.loginInput{
+    /*border-left: 0;*/
+    /*padding-left: 0;*/
+}
+/*登录页面输入框的标题*/
+.loginSpan{
+    background: #fff;
+    border-radius: 0;
+}
+.loginDiv .loginGroup{
+    /*margin: 10px 10px 20px 10px;*/
+    margin: 30px;
+    height: 44px;
+}
+.loginDiv .loginLeft{
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    margin: 0px 10px 20px 30px;
+}
+.loginDiv .loginRight{
+    float: right;
+    margin: 0px 30px 20px 10px;
+}
+/* 登录按钮*/
+.loginBtn{
+    border: 0;
+    border-radius: 0;
+    /*background: url("../../img/login_btn.png");*/
+    width: 150px;
+    height: 38px;
+    padding: 0;
+    line-height: 38px;
+    font-size: 16px;
+    background: #1c2b36;
+    color:#fff;
+}
+/* 登录的背景图*/
+.loginBack{
+    height: 100%;
+    background: url("../../img/login_back.jpg");
+}
+.login_title{
+    /*background: url(../../img/login_title.png);*/
+    height: 70px;
+    /*background: -webkit-linear-gradient(left,#f19622, #d86028); !* Safari 5.1 - 6.0 *!*/
+    /*background: -o-linear-gradient(left,#f19622, #d86028); !* Opera 11.1 - 12.0 *!*/
+    /*background: -moz-linear-gradient(left,#f19622, #d86028); !* Firefox 3.6 - 15 *!*/
+    /*background: linear-gradient(left,#f19622, #d86028); !* 标准的语法 *!*/
+    background: #1c2b36;
+    width: 100%;
+    background-size: 100% 100%;
+}
+.log{
+    width: 35%;
+    float: left;
+    background: url(../../img/log.png);
+    margin: 2px 5px;
+    height: 48px;
+    background-size: 100% 100%;
+    margin-top: 11px;
+}
+.yuehua{
+    width: 50%;
+    float: right;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    text-align: right;
+    color: #fff;
+    padding-right: 20px;
+}
+.loginInput:focus{
+    /*border-color: red;*/
+}
+.loginBtn:hover{
+    background: #131b21;
+    color: #fff;
+}
+
+.welcomeBlock{
+    background: url('../../img/welcome.png');
+    background-size: 100% 100%;
+    height: 510px;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* 证件照*/
+.identifyBlock{
+    height: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+.divClass .selectClass {
+    display: inline-block;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 36px;
+    line-height: 36px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    padding: 0px 24px 0px 8px;
+    border-image: initial;
+    border-radius: 5px;
+    outline: none;
+    background: url(../img/a.png) right center no-repeat scroll transparent;
+    background-position-x: 96%;
+}
+.gride-top .divClass ul{
+    display: block;
+}
